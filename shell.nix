@@ -1,7 +1,7 @@
 with import <nixpkgs> {};
 
 stdenv.mkDerivation {
-  name = "quipu";
+  name = "keycircle";
   buildInputs = [
     nodejs
     python

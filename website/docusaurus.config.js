@@ -1,17 +1,28 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'KeyCircle', // keycircle, syncment, cipherbeam, kframe, hyperframe, blockup, chainwwave, corelate, blocktable, blockbyte, bitblock, keytype, blocktype, hashlog, keychaind, blockmold, unblockly, keyplayer
+  tagline: 'Secure on-chain storage for humans (and robots)',
   url: 'https://drojas.github.io', // Your website URL
-  baseUrl: '/quipu/', // Base URL for your project */
+  baseUrl: '/keycircle/', // Base URL for your project */
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'drojas',
-  projectName: 'quipu',
+  projectName: 'keycircle',
+  plugins: [
+    'docusaurus-plugin-sass'
+  ],
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      // disableSwitch: true,
+    },
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/palenight'),
+    },
     navbar: {
-      title: 'My Site',
+      title: 'KeyCircle',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Keycircle Network',
         src: 'img/logo.svg',
       },
       items: [
@@ -76,7 +87,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} KeyCircle. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -98,7 +109,7 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       },
     ],
